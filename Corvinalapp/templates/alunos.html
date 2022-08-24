@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <hr>
+  <table class="table table-striped">
+    <tr>
+      <th>Id</th>
+      <th>Nome</th>
+      <th>Data nascimento</th>
+      <th>Endereço</th>
+      <th>Id classe</th>
+      <th>Id animal</th>
+      <th>Id tutor</th>
+      <th>Id pais</th>
+      <th>Id casa</th>
+    </tr>
+    {% for animal in animais %}
+      <tr>
+        <td>{{aluno.id_aluno}}</td>
+        <td>{{aluno.nome_aluno}}</td>
+        <td>{{aluno.data_nascimento_aluno}}</td>
+        <td>{{aluno.endereco_aluno}}</td>
+        <td>{{aluno.id_classe}}</td>
+        <td>{{aluno.id_animal}}</td>
+        <td>{{aluno.id_tutor}}</td>
+        <td>{{aluno.id_pais}}</td>
+        <td>{{aluno.id_casa}}</td>
+      </tr>
+    {% endfor %}
+  </table>
+
+{% endblock %}
